@@ -21,38 +21,79 @@ body {
 ul {
   list-style: none; }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  /*  font-size: 16px; */
-  line-height: 1.5;
-  color: #000;
-  padding: 5rem; }
+a, a:link, a:visited {
+  text-decoration: none;
+  color: black; }
 
-.heading--main {
-  font-size: 4.8rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: .75;
-  line-height: 1.4rem; }
+@media all and (min-width: 768px) {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    /*  font-size: 16px; */
+    color: #000;
+    padding: 5rem;
+    text-transform: uppercase; }
+  .heading--main {
+    font-size: 7.2rem;
+    font-weight: 400;
+    letter-spacing: .75;
+    line-height: 1.4rem; }
+  .heading--sub {
+    font-size: 3.6rem;
+    font-weight: 300;
+    letter-spacing: 1rem; }
+  .nav {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1.25rem; }
+  .footer {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .5rem; }
+    .footer__primary--sub {
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: .25rem;
+      padding-bottom: 1rem; }
+  .created-by {
+    font-size: 1.4rem;
+    font-weight: 200; } }
 
-.heading--sub {
-  font-size: 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1rem; }
-
-.footer {
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 1.5;
-  text-transform: uppercase; }
-
-.nav {
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 1.25;
-  text-transform: uppercase; }
+@media all and (min-width: 0px) and (max-width: 767px) {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    /*  font-size: 16px; */
+    color: #000;
+    padding: 2rem;
+    text-transform: uppercase; }
+  .heading {
+    padding-bottom: 1rem; }
+    .heading--main {
+      font-size: 2.8rem;
+      font-weight: 400;
+      letter-spacing: .1rem;
+      line-height: 1rem; }
+    .heading--sub {
+      font-size: 1.6rem;
+      font-weight: 200;
+      letter-spacing: .2rem; }
+  .nav {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .3rem; }
+  .footer {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .5rem; }
+    .footer__primary--sub {
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: .25rem;
+      padding-bottom: 1rem; }
+  .created-by {
+    font-size: 1.2rem;
+    font-weight: 200; } }
 
 .u-center-text {
   text-align: center; }
@@ -60,68 +101,84 @@ body {
 .line-break {
   width: 100%; }
 
-@media (min-width: 768px) {
-  .footer {
-    padding: 2rem;
-    margin: 0 auto;
-    width: 95%; } }
+.vertical-break {
+  color: transparent; }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media all and (min-width: 768px) {
   .footer {
-    padding-top: 2rem;
-    margin: 0 auto;
-    width: 100%;
-    font-size: 1.6rem;
-    font-weight: 300; }
-  .created-by {
-    font-size: 1;
-    font-weight: 200; }
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: center; }
   .vertical-break {
-    color: transparent; } }
+    color: black; } }
 
-@media (min-width: 768px) {
-  .heading {
-    text-align: center; }
-    .heading--sub {
-      padding-top: 1rem;
-      font-weight: 300; } }
+@media all and (min-width: 0px) and (max-width: 767px) {
+  .footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: center; } }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  .heading {
-    text-align: center; }
-    .heading--main {
-      font-size: 2.8rem;
-      letter-spacing: 0;
-      font-weight: 400; }
-    .heading--sub {
-      font-size: 1.6rem;
-      padding-top: 0;
-      font-weight: 200; } }
+.header {
+  display: flexbox;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  text-align: center; }
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
   .nav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin: 2rem; } }
+    margin-top: 2rem;
+    margin-bottom: 3rem; }
+    .nav .hover-border {
+      border: 3px solid transparent;
+      display: inline-block;
+      direction: rtl;
+      text-indent: -1.5rem;
+      border-spacing: 1.5rem; }
+      .nav .hover-border:hover {
+        border-bottom: 1px solid lightslategrey;
+        transform: translateY(-0.3rem) scale(1.15);
+        direction: rtl;
+        display: inline-block;
+        text-indent: -1.5rem;
+        border-spacing: 1.5rem;
+        translate: all .2s; }
+      .nav .hover-border:active {
+        transform: translateY(-0.1rem) scale(1.01);
+        translate: all .2s; } }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media all and (min-width: 0px) and (max-width: 767px) {
   .nav {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 2rem;
-    font-weight: 300;
-    letter-spacing: .1rem; }
-    .nav span:not(:first-child) {
-      padding-left: 3rem; } }
+    justify-content: space-around;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem; }
+    .nav .hover-border {
+      border: 3px solid transparent;
+      display: block; }
+      .nav .hover-border:hover {
+        border-bottom: 1px solid lightslategrey;
+        transform: translateY(-0.3rem); }
+      .nav .hover-border:active {
+        transform: translateY(-0.1rem); } }
 
 @media (min-width: 768px) {
+  img {
+    max-width: 100%;
+    min-height: 100%; }
   .gallery > .gallery__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     grid-template-rows: repeat(6, 32rem);
-    grid-gap: 1rem;
+    gap: 1rem;
     grid-auto-flow: dense; }
   .gallery > .gallery__list > li:nth-child(3n) {
     grid-column: span 2;
@@ -140,6 +197,9 @@ body {
     object-fit: cover; } }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  img {
+    max-width: 100%;
+    min-height: 100%; }
   .gallery > .gallery__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
