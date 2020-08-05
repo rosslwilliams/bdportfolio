@@ -173,7 +173,7 @@ a, a:link, a:visited {
 @media (min-width: 1025px) {
   .gallery .gallery__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-template-rows: repeat(8, 32rem);
     gap: 1rem;
     grid-auto-flow: dense; }
@@ -196,7 +196,7 @@ a, a:link, a:visited {
 @media (min-width: 0px) and (max-width: 1024px) {
   .gallery .gallery__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
     grid-template-rows: repeat(8, 16rem);
     gap: 1rem;
     grid-auto-flow: dense; }
@@ -206,7 +206,7 @@ a, a:link, a:visited {
   .gallery li:nth-child(5n) {
     grid-column: span 3;
     grid-row: span 3; }
-  .gallery li:nth-last-child(-n+15) {
+  .gallery li:nth-last-child(-n+11) {
     grid-column: span 1;
     grid-row: span 1; }
   .gallery figure {

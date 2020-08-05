@@ -4,7 +4,7 @@
 
     .gallery__list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
       grid-template-rows: repeat(8, 32rem);
       gap: 1rem;
       grid-auto-flow: dense;
@@ -42,7 +42,7 @@
 
     .gallery__list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
       grid-template-rows: repeat(8, 16rem);
       gap: 1rem;
       grid-auto-flow: dense;
@@ -58,7 +58,7 @@
       grid-row: span 3;
     }
 
-    li:nth-last-child(-n+15) {
+    li:nth-last-child(-n+11) {
       grid-column: span 1;
       grid-row: span 1;
     }
