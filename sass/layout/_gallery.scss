@@ -1,11 +1,11 @@
-@media (min-width: 768px) {
+@media (min-width: $desktop-screen) {
 
   .gallery {
 
     .gallery__list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-      grid-template-rows: repeat(6, 32rem);
+      grid-template-rows: repeat(8, 32rem);
       gap: 1rem;
       grid-auto-flow: dense;
     }
@@ -36,14 +36,14 @@
     }
   }
 }
-@media (min-width: 0px) and (max-width:767px) {
+@media (min-width: 0px) and (max-width: $mobile-screen) {
   
   .gallery {
 
     .gallery__list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-      grid-template-rows: repeat(6, 16rem);
+      grid-template-rows: repeat(8, 16rem);
       gap: 1rem;
       grid-auto-flow: dense;
     }
@@ -58,7 +58,7 @@
       grid-row: span 3;
     }
 
-    li:nth-last-child(-n+5) {
+    li:nth-last-child(-n+15) {
       grid-column: span 1;
       grid-row: span 1;
     }

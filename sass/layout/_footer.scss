@@ -1,4 +1,4 @@
-@media all and (min-width: 768px) {
+@media all and (min-width: $desktop-screen) {
     .footer {
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -13,7 +13,7 @@
     }
 }
 
-@media all and (min-width: 0px) and (max-width: 767px) {
+@media all and (min-width: 0px) and (max-width: $mobile-screen) {
     .footer {
         padding-top: 1rem;
         padding-bottom: 1rem;

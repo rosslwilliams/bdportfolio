@@ -1,4 +1,4 @@
-@media all and (min-width: 768px) {
+@media all and (min-width: $desktop-screen) {
 
   .nav {
         display: flex;
@@ -32,7 +32,7 @@
 
   }
 
-  @media all and (min-width: 0px) and (max-width: 767px) {
+  @media all and (min-width: 0px) and (max-width: $mobile-screen) {
     .nav {
       display: flex;
       justify-content: space-around;
