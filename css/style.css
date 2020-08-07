@@ -33,23 +33,30 @@ a, a:link, a:visited {
     color: #000;
     padding: 5rem;
     text-transform: uppercase; }
-  .heading--main {
-    font-size: 7.2rem;
-    font-weight: 400;
-    letter-spacing: .75;
-    line-height: 1.4rem; }
-  .heading--sub {
-    font-size: 3.6rem;
-    font-weight: 300;
-    letter-spacing: 1rem; }
+  .heading {
+    padding-top: 1.5rem; }
+    .heading--main {
+      font-size: 7.2rem;
+      font-weight: 400;
+      letter-spacing: .75;
+      line-height: 1.4rem; }
+    .heading--sub {
+      font-size: 3.6rem;
+      font-weight: 300;
+      letter-spacing: 1rem; }
   .nav {
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 1.25rem; }
+  .about-container {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: justify; }
   .footer {
     font-size: 1.6rem;
     font-weight: 400;
-    letter-spacing: .5rem; }
+    letter-spacing: .25rem; }
     .footer__primary--sub {
       font-size: 1.4rem;
       font-weight: 300;
@@ -65,10 +72,10 @@ a, a:link, a:visited {
     font-weight: 400;
     /*  font-size: 16px; */
     color: #000;
-    padding: 2rem;
+    padding: 1.5rem;
     text-transform: uppercase; }
   .heading {
-    padding-bottom: 1rem; }
+    padding-top: 1rem; }
     .heading--main {
       font-size: 2.8rem;
       font-weight: 400;
@@ -82,10 +89,13 @@ a, a:link, a:visited {
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: .3rem; }
+  .about-container {
+    font-size: 1rem;
+    font-weight: 300; }
   .footer {
     font-size: 1.6rem;
     font-weight: 400;
-    letter-spacing: .5rem; }
+    letter-spacing: .25rem; }
     .footer__primary--sub {
       font-size: 1.4rem;
       font-weight: 300;
@@ -93,7 +103,8 @@ a, a:link, a:visited {
       padding-bottom: 1rem; }
   .created-by {
     font-size: 1.2rem;
-    font-weight: 200; } }
+    font-weight: 200;
+    padding-bottom: 1rem; } }
 
 .u-center-text {
   text-align: center; }
@@ -111,9 +122,7 @@ a, a:link, a:visited {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
-    text-align: center; }
-  .vertical-break {
-    color: black; } }
+    text-align: center; } }
 
 @media all and (min-width: 0px) and (max-width: 1024px) {
   .footer {
@@ -124,43 +133,42 @@ a, a:link, a:visited {
     margin-top: 1rem;
     text-align: center; } }
 
-.header {
-  display: flexbox;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
-  text-align: center; }
-
 @media all and (min-width: 1025px) {
   .nav {
     display: flex;
-    justify-content: space-around;
     margin-top: 2rem;
     margin-bottom: 3rem; }
+    .nav-left {
+      flex: 1; }
+    .nav-right {
+      flex: 1; }
     .nav .hover-border {
       border: 3px solid transparent;
       display: inline-block;
       direction: rtl;
-      text-indent: -1.5rem;
+      text-indent: -1.25rem;
       border-spacing: 1.5rem; }
       .nav .hover-border:hover {
         border-bottom: 1px solid lightslategrey;
         transform: translateY(-0.3rem) scale(1.15);
         direction: rtl;
         display: inline-block;
-        text-indent: -1.5rem;
+        text-indent: -1.25rem;
         border-spacing: 1.5rem;
         translate: all .2s; }
       .nav .hover-border:active {
-        transform: translateY(-0.1rem) scale(1.01);
+        transform: translateY(-0.1rem) scale(1.1);
         translate: all .2s; } }
 
 @media all and (min-width: 0px) and (max-width: 1024px) {
   .nav {
     display: flex;
-    justify-content: space-around;
     margin-top: .5rem;
     margin-bottom: 1.5rem; }
+    .nav-left {
+      flex: 1; }
+    .nav-right {
+      flex: 1; }
     .nav .hover-border {
       border: 3px solid transparent;
       display: block; }
@@ -175,7 +183,7 @@ a, a:link, a:visited {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-template-rows: repeat(8, 32rem);
-    gap: 1rem;
+    gap: .5rem;
     grid-auto-flow: dense; }
   .gallery li:nth-child(3n) {
     grid-column: span 2;
@@ -197,8 +205,8 @@ a, a:link, a:visited {
   .gallery .gallery__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-    grid-template-rows: repeat(8, 16rem);
-    gap: 1rem;
+    grid-template-rows: repeat(6, 16rem);
+    gap: .25rem;
     grid-auto-flow: dense; }
   .gallery li:nth-child(3n) {
     grid-column: span 2;
@@ -206,7 +214,7 @@ a, a:link, a:visited {
   .gallery li:nth-child(5n) {
     grid-column: span 3;
     grid-row: span 3; }
-  .gallery li:nth-last-child(-n+11) {
+  .gallery li:nth-last-child(-n+16) {
     grid-column: span 1;
     grid-row: span 1; }
   .gallery figure {
@@ -215,3 +223,34 @@ a, a:link, a:visited {
     max-width: 100%;
     height: 100%;
     object-fit: cover; } }
+
+@media all and (min-width: 1025px) {
+  .about-container {
+    display: flex;
+    margin-left: 20rem;
+    margin-right: 20rem; }
+    .about-container img {
+      border-radius: 1rem; }
+    .about-container li {
+      padding-top: 2rem; }
+  .about-left {
+    display: flex;
+    margin-right: 5rem;
+    max-width: 19.5vw; } }
+
+@media all and (min-width: 0) and (max-width: 1024px) {
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+    .about-container img {
+      border-radius: 1rem;
+      width: 100%;
+      height: auto; }
+    .about-container li {
+      padding-top: .5rem; }
+  .about-left {
+    margin-right: 1.5rem;
+    justify-self: center;
+    max-width: 100%; } }

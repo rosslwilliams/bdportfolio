@@ -1,0 +1,56 @@
+@media all and (min-width: $desktop-screen) {
+
+    .about {
+        &-container {
+            display: flex;
+            margin-left: 20rem;
+            margin-right: 20rem;
+
+            img {
+                border-radius: 1rem;
+            }
+
+            li {
+                padding-top: 2rem;
+            }
+
+        }
+        &-left {
+            display: flex;
+            margin-right: 5rem;
+            max-width: 19.5vw;
+        }
+
+    }
+}
+
+@media all and (min-width: 0) and (max-width: $mobile-screen) {
+    .about {
+        &-container {
+            display: flex;
+            flex-direction: row;
+            margin-left: 1rem;
+            margin-right: 1rem;
+
+            img {
+                border-radius: 1rem;
+                width: 100%;
+                height: auto;
+            }
+
+            li {
+                padding-top: .5rem;
+            }
+
+        }
+        &-left {
+            margin-right: 1.5rem;
+            justify-self: center;
+            max-width: 100%;
+        }
+        &-right {
+    
+        }
+
+    }
+}
