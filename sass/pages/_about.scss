@@ -29,7 +29,7 @@
     }
 
     .collaborations {
-        margin-top: 1rem;
+        margin-top: .75rem;
         
         li {
             padding-top: .25rem;
@@ -38,33 +38,46 @@
 }
 
 @media all and (min-width: 0) and (max-width: $mobile-screen) {
+    
+
     .about {
         &-container {
             display: flex;
-            flex-direction: row;
-            margin-left: 1rem;
-            margin-right: 1rem;
+            flex-direction: column;
+
 
             img {
-                border-radius: 1rem;
+                text-align: center;
+                border-radius: 2rem;
                 width: 100%;
+                margin-bottom: 2rem;
+                margin-left: 10rem;
+                margin-right: 10rem;
                 height: auto;
-                max-height: 40vh;
             }
 
             li {
-                padding-top: .5rem;
+                padding-top: 1.5rem;
             }
 
         }
         &-left {
-            margin-right: 1.5rem;
-            justify-self: center;
-            max-width: 100%;
-        }
-        &-right {
-    
+            display: flex;
         }
 
+        &-title {
+            border-bottom: 2px solid lightgrey;
+            display: inline-block;
+        }
+
+    }
+
+    .collaborations {
+        margin-top: .75rem;
+        margin-bottom: .75rem;
+        
+        li {
+            padding-top: .25rem;
+        }
     }
 }

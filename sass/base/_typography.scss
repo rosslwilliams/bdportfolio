@@ -104,8 +104,21 @@
         }
 
         .about-container {
-            font-size: 1rem;
-            font-weight: 300;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 200;
+            line-height: 1.4;
+            letter-spacing: .15rem;
+
+            .about-title {
+                font-size: 2.4rem;
+                font-weight: 300;
+            }
+            
+            .collaborations-title {
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
         }
 
     .footer {

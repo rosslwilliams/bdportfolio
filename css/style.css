@@ -97,8 +97,17 @@ a, a:link, a:visited {
     font-weight: 600;
     letter-spacing: .3rem; }
   .about-container {
-    font-size: 1rem;
-    font-weight: 300; }
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.4;
+    letter-spacing: .15rem; }
+    .about-container .about-title {
+      font-size: 2.4rem;
+      font-weight: 300; }
+    .about-container .collaborations-title {
+      font-size: 1.6rem;
+      font-weight: 400; }
   .footer {
     font-size: 1.6rem;
     font-weight: 400;
@@ -248,24 +257,31 @@ a, a:link, a:visited {
     border-bottom: 2px solid lightgrey;
     display: inline-block; }
   .collaborations {
-    margin-top: 1rem; }
+    margin-top: .75rem; }
     .collaborations li {
       padding-top: .25rem; } }
 
 @media all and (min-width: 0) and (max-width: 1024px) {
   .about-container {
     display: flex;
-    flex-direction: row;
-    margin-left: 1rem;
-    margin-right: 1rem; }
+    flex-direction: column; }
     .about-container img {
-      border-radius: 1rem;
+      text-align: center;
+      border-radius: 2rem;
       width: 100%;
-      height: auto;
-      max-height: 40vh; }
+      margin-bottom: 2rem;
+      margin-left: 10rem;
+      margin-right: 10rem;
+      height: auto; }
     .about-container li {
-      padding-top: .5rem; }
+      padding-top: 1.5rem; }
   .about-left {
-    margin-right: 1.5rem;
-    justify-self: center;
-    max-width: 100%; } }
+    display: flex; }
+  .about-title {
+    border-bottom: 2px solid lightgrey;
+    display: inline-block; }
+  .collaborations {
+    margin-top: .75rem;
+    margin-bottom: .75rem; }
+    .collaborations li {
+      padding-top: .25rem; } }
