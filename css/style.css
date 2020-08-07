@@ -52,7 +52,14 @@ a, a:link, a:visited {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.4;
+    letter-spacing: .1rem;
     text-align: justify; }
+    .about-container .about-title {
+      font-size: 2.4rem;
+      font-weight: 300; }
+    .about-container .collaborations-title {
+      font-size: 1.8rem;
+      font-weight: 400; }
   .footer {
     font-size: 1.6rem;
     font-weight: 400;
@@ -142,23 +149,23 @@ a, a:link, a:visited {
       flex: 1; }
     .nav-right {
       flex: 1; }
-    .nav .hover-border {
-      border: 3px solid transparent;
-      display: inline-block;
+  .hover-border {
+    border: 3px solid transparent;
+    display: inline-block;
+    direction: rtl;
+    text-indent: -1.25rem;
+    border-spacing: 1.5rem; }
+    .hover-border:hover {
+      border-bottom: 1px solid lightslategrey;
+      transform: translateY(-0.3rem) scale(1.15);
       direction: rtl;
+      display: inline-block;
       text-indent: -1.25rem;
-      border-spacing: 1.5rem; }
-      .nav .hover-border:hover {
-        border-bottom: 1px solid lightslategrey;
-        transform: translateY(-0.3rem) scale(1.15);
-        direction: rtl;
-        display: inline-block;
-        text-indent: -1.25rem;
-        border-spacing: 1.5rem;
-        translate: all .2s; }
-      .nav .hover-border:active {
-        transform: translateY(-0.1rem) scale(1.1);
-        translate: all .2s; } }
+      border-spacing: 1.5rem;
+      translate: all .2s; }
+    .hover-border:active {
+      transform: translateY(-0.1rem) scale(1.1);
+      translate: all .2s; } }
 
 @media all and (min-width: 0px) and (max-width: 1024px) {
   .nav {
@@ -191,7 +198,7 @@ a, a:link, a:visited {
   .gallery li:nth-child(5n) {
     grid-column: span 3;
     grid-row: span 3; }
-  .gallery li:nth-last-child(-n+5) {
+  .gallery li:nth-last-child(-n+15) {
     grid-column: span 1;
     grid-row: span 1; }
   .gallery figure {
@@ -227,16 +234,20 @@ a, a:link, a:visited {
 @media all and (min-width: 1025px) {
   .about-container {
     display: flex;
-    margin-left: 20rem;
-    margin-right: 20rem; }
+    margin: 5rem 20rem 5rem 20rem; }
     .about-container img {
-      border-radius: 1rem; }
+      border-radius: 2rem; }
     .about-container li {
-      padding-top: 2rem; }
+      padding-top: 1rem; }
   .about-left {
     display: flex;
     margin-right: 5rem;
-    max-width: 19.5vw; } }
+    max-width: 19.5vw; }
+  .about-title {
+    border-bottom: 2px solid lightgrey;
+    display: inline-block; }
+  .collaborations li {
+    padding-top: .25rem; } }
 
 @media all and (min-width: 0) and (max-width: 1024px) {
   .about-container {
@@ -247,7 +258,8 @@ a, a:link, a:visited {
     .about-container img {
       border-radius: 1rem;
       width: 100%;
-      height: auto; }
+      height: auto;
+      max-height: 40vh; }
     .about-container li {
       padding-top: .5rem; }
   .about-left {

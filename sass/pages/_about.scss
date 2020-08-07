@@ -3,15 +3,14 @@
     .about {
         &-container {
             display: flex;
-            margin-left: 20rem;
-            margin-right: 20rem;
+            margin: 5rem 20rem 5rem 20rem;
 
             img {
-                border-radius: 1rem;
+                border-radius: 2rem;
             }
 
             li {
-                padding-top: 2rem;
+                padding-top: 1rem;
             }
 
         }
@@ -21,6 +20,19 @@
             max-width: 19.5vw;
         }
 
+        &-title {
+            border-bottom: 2px solid lightgrey;
+            display: inline-block;
+        }
+
+    }
+
+    .collaborations {
+        &-title {
+        }
+        li {
+            padding-top: .25rem;
+        }
     }
 }
 
@@ -36,6 +48,7 @@
                 border-radius: 1rem;
                 width: 100%;
                 height: auto;
+                max-height: 40vh;
             }
 
             li {
