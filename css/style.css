@@ -236,9 +236,10 @@ a, a:link, a:visited {
     display: flex;
     margin: 5rem 20rem 5rem 20rem; }
     .about-container img {
-      border-radius: 2rem; }
+      border-radius: 2rem;
+      width: 100%; }
     .about-container li {
-      padding-top: 1rem; }
+      padding-top: 1.5rem; }
   .about-left {
     display: flex;
     margin-right: 5rem;
@@ -246,8 +247,10 @@ a, a:link, a:visited {
   .about-title {
     border-bottom: 2px solid lightgrey;
     display: inline-block; }
-  .collaborations li {
-    padding-top: .25rem; } }
+  .collaborations {
+    margin-top: 1rem; }
+    .collaborations li {
+      padding-top: .25rem; } }
 
 @media all and (min-width: 0) and (max-width: 1024px) {
   .about-container {
