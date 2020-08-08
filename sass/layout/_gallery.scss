@@ -4,8 +4,8 @@
 
     .gallery__list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-      grid-template-rows: repeat(8, 32rem);
+      grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+      grid-template-rows: repeat(32em);
       gap: .5rem;
       grid-auto-flow: dense;
     }
@@ -15,12 +15,7 @@
       grid-row: span 2;
     }
 
-    li:nth-child(5n) {
-      grid-column: span 3;
-      grid-row: span 3;
-    }
-
-    li:nth-last-child(-n+15) {
+    li:nth-last-child(-n+5) {
       grid-column: span 1;
       grid-row: span 1;
     }
@@ -42,8 +37,8 @@
 
     .gallery__list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-      grid-template-rows: repeat(6, 16rem);
+      grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+      grid-template-rows: repeat(32em);
       gap: .25rem;
       grid-auto-flow: dense;
     }
@@ -53,12 +48,7 @@
       grid-row: span 2;
     }
 
-    li:nth-child(5n) {
-      grid-column: span 3;
-      grid-row: span 3;
-    }
-
-    li:nth-last-child(-n+16) {
+    li:nth-last-child(-n+8) {
       grid-column: span 1;
       grid-row: span 1;
     }
