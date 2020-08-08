@@ -45,11 +45,10 @@
             display: flex;
             flex-direction: column;
 
-
             img {
                 text-align: center;
                 border-radius: 2rem;
-                width: 100%;
+                width: 75%;
                 margin-bottom: 2rem;
                 margin-top: 1rem;
                 height: auto;
@@ -60,10 +59,10 @@
             }
 
         }
-        &-left {
-            display: flex;
-            margin-left: 10%;
-            margin-right: 10%;
+        &-right {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
         }
 
         &-title {
@@ -75,34 +74,28 @@
 
     .collaborations {
         margin-top: .75rem;
-        margin-bottom: .75rem;
         
         li {
             padding-top: .25rem;
         }
     }
+
+    .footer {
+        margin-top: 3rem;
+    }
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) {
-
-    .about {
-        &-container {
-            display: flex;
-            margin: 2.5em 5em 2.5em 5em;
-            img {
-                border-radius: 2rem;
-                width: 45%;
-            }
-
-    .about-left {
-        display: inline-block;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .about-right {
+@media all and (min-width: 768px) and (max-width:1024px) {
+    .about{
+        &-right {
         text-align: justify;
-        width: 85%;
+}
+
+    &-container {
+
+    img {
+        width: 40%;
+    }
     }
 }
-    }
 }
