@@ -36,7 +36,6 @@ a, a:link, a:visited {
 @media all and (min-width: 1025px) {
   body {
     font-family: 'Montserrat', sans-serif;
-    font-display: swap;
     font-weight: 400;
     /*  font-size: 16px; */
     color: #000;
@@ -47,7 +46,7 @@ a, a:link, a:visited {
     .heading--main {
       font-size: 7.2rem;
       font-weight: 400;
-      letter-spacing: .75;
+      letter-spacing: .2rem;
       line-height: 1.4rem; }
     .heading--sub {
       font-size: 3.6rem;
@@ -167,11 +166,9 @@ a, a:link, a:visited {
       direction: rtl;
       display: inline-block;
       text-indent: -1.25rem;
-      border-spacing: 1.5rem;
-      translate: all .2s; }
+      border-spacing: 1.5rem; }
     .hover-border:active {
-      transform: translateY(-0.1rem) scale(1.1);
-      translate: all .2s; } }
+      transform: translateY(-0.1rem) scale(1.1); } }
 
 @media all and (min-width: 0px) and (max-width: 1024px) {
   .nav {
@@ -181,15 +178,7 @@ a, a:link, a:visited {
     .nav-left {
       flex: 1; }
     .nav-right {
-      flex: 1; }
-    .nav .hover-border {
-      border: 3px solid transparent;
-      display: block; }
-      .nav .hover-border:hover {
-        border-bottom: 1px solid lightslategrey;
-        transform: translateY(-0.3rem); }
-      .nav .hover-border:active {
-        transform: translateY(-0.1rem); } }
+      flex: 1; } }
 
 @media (min-width: 1025px) {
   .gallery .gallery__list {
@@ -284,6 +273,7 @@ a, a:link, a:visited {
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
   .about-right {
-    text-align: justify; }
+    text-align: justify;
+    margin-bottom: 5rem; }
   .about-container img {
     width: 40%; } }
