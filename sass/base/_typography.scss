@@ -1,45 +1,112 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding: 5rem;
+    text-transform: uppercase;
+}
+    
+.heading {
+    padding-top: 1.5rem;
+
+    &--main {
+        font-size: 7.2rem;
+        font-weight: 400;
+        letter-spacing: .2rem;
+        line-height: 1.4rem;
+    }
+    &--sub {
+        font-size: 3.6rem;
+        font-weight: 300;
+        letter-spacing: 1rem;
+    }
+}
+
+.nav {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 1.25rem;
+}
+
+.footer {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .25rem;
+
+    &__primary--sub {
+        font-size: 1.4rem;
+        font-weight: 300;
+        padding-bottom: 1rem;
+    }
+}   
+
+.created-by {
+    font-size: 1.4rem;
+    font-weight: 200;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
 
 
-@media all and (min-width: $desktop-screen) {
+.about {
+
+    &-title {
+        font-size: 2.4rem;
+        font-weight: 300;
+    }
+
+    &-container {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: .1rem;
+    text-align: justify;
+        
+        .collaborations-title {
+            font-size: 2rem;
+            line-height: 1;
+            font-weight: 400;
+        }
+    }
+}
+
+
+@media all and (max-width: 1023px) {
 
     body {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-      /*  font-size: 16px; */
-        color: #000;
-        padding: 5rem;
-        text-transform: uppercase;
+        padding: 1.5rem;
     }
 
     .heading {
-        padding-top: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
         &--main {
-            font-size: 7.2rem;
-            font-weight: 400;
-            letter-spacing: .2rem;
-            line-height: 1.4rem;
+            font-size: 3.2rem;
+            letter-spacing: .1rem;
             }
         &--sub {
-            font-size: 3.6rem;
-            font-weight: 300;
-            letter-spacing: 1rem;
+            font-size: 1.6rem;
+            font-weight: 200;
+            letter-spacing: .35rem;
             }
         }
 
         .nav {
-            font-size: 1.8rem;
-            font-weight: 300;
-            letter-spacing: 1.25rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: .25rem;
+        }
+
+        .created-by {
+            font-size: 1.2rem;
         }
 
         .about-container {
             font-size: 1.6rem;
             font-weight: 300;
-            line-height: 1.4;
             letter-spacing: .1rem;
-            text-align: justify;
-
+    
             .about-title {
                 font-size: 2.4rem;
                 font-weight: 300;
@@ -50,96 +117,4 @@
                 font-weight: 400;
             }
         }
-    
-
-    .footer {
-        font-size: 1.6rem;
-        font-weight: 400;
-        letter-spacing: .25rem;
-
-        &__primary--sub {
-            font-size: 1.4rem;
-            font-weight: 300;
-            letter-spacing: .25rem;
-            padding-bottom: 1rem;
-        }
-    }
-
-    .created-by {
-        font-size: 1.4rem;
-        font-weight: 200;
-    }
-    
-}
-
-@media all and (min-width: 0px) and (max-width: $mobile-screen) {
-
-    body {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-      /*  font-size: 16px; */
-        color: #000;
-        padding: 1.5rem;
-        text-transform: uppercase;
-    }
-
-    .heading {
-        padding-top: 1rem;
-
-        &--main {
-            font-size: 2.8rem;
-            font-weight: 400;
-            letter-spacing: .1rem;
-            line-height: 1rem;
-            }
-        &--sub {
-            font-size: 1.6rem;
-            font-weight: 200;
-            letter-spacing: .2rem;
-            }
-        }
-
-        .nav {
-            font-size: 1rem;
-            font-weight: 600;
-            letter-spacing: .3rem;
-        }
-
-        .about-container {
-            text-align: center;
-            font-size: 1.4rem;
-            font-weight: 200;
-            line-height: 1.4;
-            letter-spacing: .15rem;
-
-            .about-title {
-                font-size: 2.4rem;
-                font-weight: 300;
-            }
-            
-            .collaborations-title {
-                font-size: 1.6rem;
-                font-weight: 400;
-            }
-        }
-
-    .footer {
-        font-size: 1.6rem;
-        font-weight: 400;
-        letter-spacing: .25rem;
-
-        &__primary--sub {
-            font-size: 1.4rem;
-            font-weight: 300;
-            letter-spacing: .25rem;
-            padding-bottom: 1rem;
-        }
-    }
-
-    .created-by {
-        font-size: 1.2rem;
-        font-weight: 200;
-        padding-bottom: 1rem;
-    }
-    
 }

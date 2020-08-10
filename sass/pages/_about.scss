@@ -1,102 +1,96 @@
-@media all and (min-width: $desktop-screen) {
+.about {
+    &-container {
+        display: flex;
 
-    .about {
-        &-container {
-            display: flex;
-            margin: 5rem 20rem 6rem 20rem;
+        img {
+            border-radius: 2rem;
+            width: 100%;
+        }
 
-            img {
-                border-radius: 2rem;
-                width: 100%;
+        .collaborations {
+            margin-top: 1rem;
+            
+            li:not(1) {
+                padding-top: .25rem;
             }
-
-            li {
-                padding-top: 1.5rem;
-            }
-
         }
-        &-left {
-            display: flex;
-            margin-right: 5rem;
-            max-width: 20vw;
-        }
-
-        &-title {
-            border-bottom: 2px solid lightgrey;
-            display: inline-block;
-        }
-
     }
-
-    .collaborations {
-        margin-top: .75rem;
-        
-        li {
-            padding-top: .25rem;
+    &-content {
+        li:is(:first-child) {
+            padding-top: .5rem;
+        }
+        li:not(:first-child) {
+            padding-top: 1rem;
         }
     }
 }
 
-@media all and (min-width: 0) and (max-width: $mobile-screen) {
-    
+@media all and (min-width: $desktop-screen) {
 
     .about {
         &-container {
-            display: flex;
+            margin: 4rem 20rem 4rem 20rem;
+
+        }
+        &-left {
+            margin-right: 5rem;
+            max-width: 23vw;
+        }
+
+        &-title {
+            border-bottom: 2px solid lightgrey;
+        }
+
+    }
+}
+
+@media all and (max-width: $mobile-screen) {
+    
+    .about {
+        &-container {
             flex-direction: column;
 
             img {
                 text-align: center;
-                border-radius: 2rem;
-                width: 75%;
+                width: 80%;
                 margin-bottom: 2rem;
                 margin-top: 1rem;
                 height: auto;
             }
 
-            li {
-                padding-top: 1.5rem;
+            .collaborations {
+                margin-top: 2rem;
             }
-
         }
         &-right {
             text-align: center;
             width: 80%;
             margin: 0 auto;
+
+            .about-content {
+                li {
+                    padding-top: .75rem;
+                }
+            }
         }
 
         &-title {
             border-bottom: 2px solid lightgrey;
             display: inline-block;
         }
-
-    }
-
-    .collaborations {
-        margin-top: .75rem;
-        
-        li {
-            padding-top: .25rem;
-        }
-    }
-
-    .footer {
-        margin-top: 4rem;
     }
 }
 
 @media all and (min-width: 768px) and (max-width:1024px) {
-    .about{
+    .about {
         &-right {
-        text-align: justify;
-        margin-bottom: 5rem;
-}
+            text-align: justify;
+        }
 
-    &-container {
-
-    img {
-        width: 40%;
+        &-container {
+            img {
+                width: 35%;
+            }
+        }
     }
-    }
-}
 }
